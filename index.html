@@ -32,15 +32,35 @@
         
     </div>
 
-    <div class="button" style=" 
+    <div style=" 
         width: 20px;
         height: 10px;
         justify-content: center;
 
 
     
-    "><button style="border-radius: 5px;"> me aperte</button> </div>
+    "><button id="button" style="border-radius: 5px;" onmouseover= "fugir()"> me aperte</button> </div>
 </div>
         
 </body>
+
+<script>
+
+function fugir (){
+var btn = document.getElementById("button");
+console.log(btn);
+console.log("hoje não");
+btn.style.position = 'absolute';
+btn.style.top = randomp(10,90);
+btn.style.left = randomp(10,90);
+
+}
+
+function randomp(min, max) {
+  return (Math.random() * (max - min) + min) + "%";
+}
+
+</script>
+
+
 </html>
